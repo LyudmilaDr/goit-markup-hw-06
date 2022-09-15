@@ -52,8 +52,35 @@
                   <div class="container container-slogan ">
                     <h1 class="cnt">Ефективні рішення для вашого бізнесу</h1>
                   <button class="button" type="button" data-modal-open>Замовити послугу</button>
+                   <!--Modal -->
                   <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
+                      <form class="register-form" name="register-form" avtocomplete="on" novalidate>
+                        <span>Залиште свої дані, ми вам передзвонимо</span>
+                        <div><label class="label" for="user-name"> <span>Ім'я</span>
+                       <svg class="icon-user-name" width="18" height="18">
+                      <use href="./images/icons.svg#user"></use> </svg>
+                    <input type="text" id="user-name" autofocus>
+                  </label>
+                         <label class="label"for="user-phone"> <span>Телефон</span>
+                          <svg class="icon-user-phone" width="18" height="18">
+                      <use href="./images/icons.svg#phone"></use> </svg>
+                        <input type="tel" id="user-phone"></label> 
+                        <label class="label" for="user-email"> 
+                          <span>Пошта</span>
+                          <svg class="icon-user-email" width="18" height="18">
+                      <use href="./images/icons.svg#email"></use> </svg>
+                        <input type="email" id="user-email"></label>
+                        <label class="label" for="user-coment"> <span>Коментар</span>
+                        <textarea rows="6" placeholder="Введіть текст"></textarea>
+                        </label>
+                        <label class="label" for="checkbox">
+                        <input type="checkbox" id="checkbox"/> <span> Погоджуюся з розсилкою та приймаю  Умови договору</span>
+                          </label>
+                        </div>
+                        <button type="submit">Відправити</button>
+
+                      </form>
                     <button class="button-modal" type="button" data-modal-close>
             <svg class="" width="30" height="30">
               <use href="images/icons.svg#close"  ></use> </svg>

@@ -258,6 +258,10 @@ cursor: pointer;
 .button:focus {
   background-color:#188CE8;
 }
+.label{
+  display:block;
+
+}
 /**
   |============================
   | About
