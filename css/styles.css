@@ -294,7 +294,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     text-transform: none;
 }
 .form-user-conteiner {
-  position: relative;
+position: relative;
 margin-bottom: 10px;
 }
 .icon{
@@ -861,6 +861,11 @@ margin-bottom: 20px;
   justify-content: center;
   margin-left: 12px;
   }
+    .footer-container-form-btn:hover,
+    .footer-container-form-btn:focus{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition:box-shadow  250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
   .footer-form-icon{
     fill:#ffffff;
     margin-left: 10px;
