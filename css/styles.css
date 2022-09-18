@@ -339,6 +339,7 @@ margin-bottom: 10px;
 .form-user-input:hover+ .icon-user,
 .form-user-input:focus+ .icon-user{
   fill:#2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
