@@ -26,15 +26,12 @@
   margin-left: auto;
   margin-right: auto;
 
- /*outline:2px solid red;
-  outline-offset:-2px;*/
+
 }
 .section{
   padding-top:94px;
   padding-bottom:94px;
 
-  /*outline: 2px solid blueviolet;
-  outline-offset: -2px;*/
 }
 
 /* reset */
@@ -240,6 +237,10 @@ height:30px;
 background-color:transparent;
 cursor: pointer;
 }
+.button-modal-icon:hover {
+fill:#2196F3;
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .cnt {
   font-size: 44px;
@@ -314,11 +315,12 @@ margin-bottom: 10px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 40px;
   cursor: pointer;
-
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+.form-user-input:hover,
 .form-user-input:focus {
   border:1px solid var(--accent-color);
-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .icon-user {
@@ -331,7 +333,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   justify-content: center;
   align-items: center;
 }
-
+.form-user-input:hover+ .icon-user,
 .form-user-input:focus+ .icon-user{
   fill:#2196F3;
 
@@ -339,6 +341,7 @@ transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .form-user-coment{
 width: 100%;
+cursor: pointer;
 border-radius: 4px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 }
@@ -346,9 +349,11 @@ border: 1px solid rgba(33, 33, 33, 0.2);
   font-family:var(--main-font);
  font-size: 12px;
  line-height:1,16;
+cursor: pointer;
  color: rgba(117, 117, 117, 0.5);
 
 }
+.form-user-coment:hover,
 .form-user-coment:focus {
   border: 1px solid var(--accent-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -364,11 +369,13 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .icon-unchecked{
   opacity:1;
+  cursor: pointer;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-checked{
   opacity: 0;
+  cursor: pointer;
   border: 1px solid #2196F3;
   border-radius: 2px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -382,8 +389,8 @@ border: 1px solid rgba(33, 33, 33, 0.2);
   }
  .form-input-checkbox:focus+ .icon-user-vector{
     outline: 2px solid var(--accent-color);
-      outline-offset: 1px;
-      border-radius: 2px
+    outline-offset: 1px;
+    border-radius: 2px;
  }
  .form-link{
  color: var(--accent-color); 
@@ -400,11 +407,16 @@ border: 1px solid rgba(33, 33, 33, 0.2);
   margin-bottom: 40px;
   margin-top: 30px;
   color: var(--title-text-color);
-  background-color: #188CE8;
+  background-color: #2196F3;
   border: 1px solid #188CE8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-button:hover,
+.form-button:focus{
+background-color:#188CE8;
 }
 
 /**
