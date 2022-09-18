@@ -881,5 +881,6 @@ margin-bottom: 20px;
     border-radius: 4px;
     background-color: #2F303A;
     padding-left: 16px;
+    cursor: pointer;
   
   }
