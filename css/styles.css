@@ -211,9 +211,8 @@ transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top:50%;
   left:50%;
   transform:translate(-50%,-50%) scale(1);
-  min-height: 581px;
   min-width: 528px;
-  padding:15px;
+  padding:40px;
   background-color: #ffffff;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -276,25 +275,24 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   | Form
   |============================
 */
-.footer-container-form{
-  padding: 30px;
-}
+
 .form-label{
   display:block;
   text-align:left;
+  margin-bottom:4px;
 
 }
 .form-title{
   font-family:var(--main-font);
     font-weight: 700;
     font-size: 20px;
-    line-height:1,15;
+    line-height:1.15;
     text-align: center;
     color:var(--primmaty-text-color);
     display: block;
     margin-bottom:12px;
-    margin-top: 35px;
     text-transform: none;
+    letter-spacing:0.03em;
 }
 .form-user-conteiner {
 position: relative;
@@ -307,7 +305,7 @@ margin-bottom: 10px;
   font-family:var(--main-font);
     font-weight: 400;
     font-size: 12px;
-    line-height:1,16;
+    line-height:1.16;
     color:var(--text-color);
     text-transform:capitalize;
 }
@@ -317,7 +315,7 @@ margin-bottom: 10px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   padding-left: 40px;
-  cursor: pointer;
+  outline: none;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .form-user-input:hover,
@@ -328,7 +326,7 @@ margin-bottom: 10px;
 
 .icon-user {
   position: absolute;
-  top: 0;
+  top:10%;
   left:15px;
   transform: translateY(150%);
   fill:var(--primmaty-text-color);
@@ -345,14 +343,15 @@ margin-bottom: 10px;
 
 .form-user-coment{
 width: 100%;
-cursor: pointer;
+padding: 12px 16px;
+resize: none;
 border-radius: 4px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .form-user-coment::placeholder{
   font-family:var(--main-font);
  font-size: 12px;
- line-height:1,16;
+ line-height:1.16;
 cursor: pointer;
  color: rgba(117, 117, 117, 0.5);
 
@@ -362,24 +361,28 @@ cursor: pointer;
   border: 1px solid var(--accent-color);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-label-coment{
+  display: flex;
+  justify-content:start;
+  text-align:center;
+  gap: 8px;
+}
 .form-user-span{
  font-family:var(--main-font);
   font-weight: 400;
   font-size: 14px;
-  line-height:1,71;
+  line-height:1.71;
   color:var(--text-color);
   text-transform: none;
 
 }
 .icon-unchecked{
   opacity:1;
-  cursor: pointer;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icon-checked{
   opacity: 0;
-  cursor: pointer;
   border: 1px solid #2196F3;
   border-radius: 2px;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
@@ -406,9 +409,8 @@ cursor: pointer;
   font-family: var(--main-font);
   font-weight: 700;
   font-size: 16px;
-  line-height: 1, 87;
+  line-height: 1.87;
   padding: 10px 52px;
-  margin-bottom: 40px;
   margin-top: 30px;
   color: var(--title-text-color);
   background-color: #2196F3;
@@ -803,6 +805,7 @@ margin-bottom: 20px;
 }
 .footer-container{
   display: flex;
+  align-items: baseline;
 }
 .footer-special{
   margin-right:70px ;
@@ -835,22 +838,23 @@ margin-bottom: 20px;
   margin-right: 30px;
   }
   .footer-container-form{
-    display: block;
-    margin-left: 93px;
+    margin-left:auto;
   }
   .footer-form-title {
+    display: block;
     font-family:var(--main-font);
    font-weight: 700;
    font-size: 14px;
-   line-height:1,14;
+   line-height:1.14;
    text-transform: uppercase;
    color:var(--title-text-color);
+   margin-bottom: 20px;
   }
   .footer-form-btn {
     font-family:var(--main-font);
     font-weight: 700;
     font-size: 16px;
-    line-height:1,88;
+    line-height:1.88;
     color: var(--title-text-color);
     
   }
@@ -883,10 +887,11 @@ margin-bottom: 20px;
   .footer-container-form-input {
     width: 358px;
     height: 50px;
-    border: 1px solid #2196F3;
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     background-color: #2F303A;
     padding-left: 16px;
-    cursor: pointer;
+    color: var(--title-text-color);
+
   
   }
