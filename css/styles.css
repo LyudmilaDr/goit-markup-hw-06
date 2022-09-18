@@ -848,6 +848,7 @@ margin-bottom: 20px;
     font-size: 16px;
     line-height:1,88;
     color: var(--title-text-color);
+    
   }
   .footer-container-form-btn{
   background: #2196F3;
@@ -860,6 +861,7 @@ margin-bottom: 20px;
   align-items: center;
   justify-content: center;
   margin-left: 12px;
+  cursor: pointer;
   }
     .footer-container-form-btn:hover,
     .footer-container-form-btn:focus{
