@@ -58,27 +58,38 @@
                       <form action="my-register-form" method="post" name="register-form" avtocomplete="on" novalidate>
                         <span class="form-title">Залиште свої дані, ми вам передзвонимо</span>
                         <div>
+                          <div class="form-user-conteiner">
                           <label class="form-label" for="user-name"> <span class="form-user">Ім'я</span> </label>
-                       <svg class="icon-user-name" width="18" height="18">
+                        <input class="form-user-input" type="text" id="user-name" autofocus name="form-user-name">
+                          <svg class="icon icon-user" width="18" height="18">
                       <use href="./images/icons.svg#user"></use> </svg>
-                    <input class="form-user-input" type="text" id="user-name" autofocus>
-                         <label class="form-label"for="user-phone"> <span class="form-user">Телефон</span></label>
-                          <svg class="icon-user-phone" width="18" height="18">
+                   </div>
+                         <div class="form-user-conteiner">
+                          <label class="form-label"for="user-phone"> <span class="form-user">Телефон</span></label>
+                           <input class="form-user-input" type="tel" id="user-phone" name="form-user-phone">
+                          <svg class="icon-user" width="18" height="18">
                       <use href="./images/icons.svg#phone"></use> </svg>
-                        <input class="form-user-input" type="tel" id="user-phone"> 
-                        <label class="form-label" for="user-email"> 
+                       </div>
+                        <div  class="form-user-conteiner">
+                          <label class="form-label" for="user-email">
                           <span class="form-user">Пошта</span></label>
-                          <svg class="icon-user-email" width="18" height="18">
+                           <input  class="form-user-input" type="email" id="user-email" name="form-user-email" >
+                          <svg class="icon-user" width="18" height="18">
                       <use href="./images/icons.svg#email"></use> </svg>
-                        <input  class="form-user-input" type="email" id="user-email">
+                       </div>
+                        <div class="form-user-conteiner">
                         <label class="form-label" for="user-coment"> <span class="form-user">Коментар</span> </label>
                         <textarea class="form-user-coment" rows="6" placeholder="Введіть текст"></textarea>
-                        <label class="form-label" for="checkbox">  
-                        <input type="checkbox" id="checkbox"/>
-                         <svg class="icon-user-email" width="16" height="15">
-                      <use href="./images/icons.svg#vector"></use> </svg>
-                       <span class="form-user-span"> Погоджуюся з розсилкою та приймаю<a class="form-link" href=""> Умови договору</a> </span>
-                          </label>
+                        </div>
+                           <label class="form-label">
+                        <input class="form-input-checkbox  visually-hidden" type="checkbox" name="form-user-checkbox"/>
+                         <svg class="icon-user-vector" width="16" height="15">
+                      <use class="icon-unchecked" href="./images/icons.svg#vect"></use> 
+                    <use class="icon-checked" href="./images/icons.svg#icon-check"></use>
+                  </svg>
+                       <span class="form-user-span"> Погоджуюся з розсилкою та приймаю
+                        <a class="form-link" href=""> Умови договору</a> </span>
+                         </label>
                         </div>
                         <button class="form-button" type="submit">Відправити</button>
 
@@ -93,7 +104,7 @@
                 <!--About section -->
                 <section class="about section">
                   <div class=" container">
-                  <h2 class="visually-hidder">Особливості роботи нашої студії</h2>
+                  <h2 class="visually-hidden">Особливості роботи нашої студії</h2>
                   <ul class="list">
                     <li class="about-item">
                       <div class="about-box">
