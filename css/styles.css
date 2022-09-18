@@ -320,6 +320,7 @@ margin-bottom: 10px;
   border:1px solid var(--accent-color);
 transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .icon-user {
   position: absolute;
   top: 0;
@@ -347,6 +348,10 @@ border: 1px solid rgba(33, 33, 33, 0.2);
  line-height:1,16;
  color: rgba(117, 117, 117, 0.5);
 
+}
+.form-user-coment:focus {
+  border: 1px solid var(--accent-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-user-span{
  font-family:var(--main-font);
