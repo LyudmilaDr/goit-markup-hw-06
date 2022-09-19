@@ -345,6 +345,7 @@ margin-bottom: 10px;
 .form-user-coment{
 width: 100%;
 padding: 12px 16px;
+outline: none;
 resize: none;
 border-radius: 4px;
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -367,7 +368,7 @@ cursor: pointer;
   justify-content:start;
   text-align:center;
   gap: 8px;
-  outline: none;
+  
 }
 .form-user-span{
  font-family:var(--main-font);
@@ -378,6 +379,13 @@ cursor: pointer;
   text-transform: none;
 
 }
+.form-label-checkbox{
+display: flex;
+justify-content:center;
+align-items: center;
+gap:9px;
+}
+
 .icon-unchecked{
   opacity:1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
